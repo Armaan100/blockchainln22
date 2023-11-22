@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "blockChainLn22_backend": {
+      "main": "src/blockChainLn22_backend/main.mo",
+      "type": "motoko"
+    },
+    "blockChainLn22_frontend": {
+      "dependencies": [
+        "blockChainLn22_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/blockChainLn22_frontend/src/index.html"
+      },
+      "source": [
+        "src/blockChainLn22_frontend/assets",
+        "dist/blockChainLn22_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
